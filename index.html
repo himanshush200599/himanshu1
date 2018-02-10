@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+         <meta charset = "utf-8">
+		<meta http-equiv="X-UA-Compatible" content = "IE=edge">
+		<meta name="viewport" content= "width=device-width, initial-scale=1">
+		<link  rel="stylesheet" href="bootstrap.min.css">
+<title>Himanshu-web_developer</title>
+<meta name="description" content="himanshu is a web developer and programmer from india">
+<meta name="keywords" content="HTML, CSS, javascript, PHP, Portfolio, Personal Website, Developer, Developer India, Web developer, himanshudev. Website">
+<meta name="author" content="Himanshu sharma"/>
+<meta name=”geo.position” content=”latitude; longitude“>
+<meta name=”geo.placename” content=”Place Name“>
+<meta name=”geo.region” content=”Country Subdivision Code“>
+<meta http-equiv="Cache-control" content="public">
+<meta http-equiv="Cache-control" content="private">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Cache-control" content="no-store">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<link media="print" rel="shortcut icon" href="him.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+  margin:0;
+  padding:0;
+  color:#666;
+  background:#888;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:20px;
+}
+h2,h3{
+  color:#888;
+  font-weight:bold;
+  text-align:center;
+  text-transform:uppercase;
+}
+a{
+  color:#722872;
+}
+a:hover,a:focus{
+    color:#592059;
+  }
+#banner .container, 
+main header, 
+#portfolio .grid, 
+#contact>div,
+footer #footer-above{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-flow:row wrap;
+          flex-flow:row wrap;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
+  margin:0 auto; 
+}
+#banner{
+  background-color:#722872 !important;
+  height:80px;
+  -webkit-box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-color:#592059;
+}
+#banner .container{
+    width:95%;
+    max-width:1024px;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+  }
+#banner .container::before, #banner .container::after{
+      display:none
+    }
+#banner img{
+    height:50px;
+    margin:15px 0;
+  }
+nav{
+  font-size:13px;
+  background:#722872;
+  -webkit-transition:all .3s;
+  transition:all .3s;
+}
+@media(max-width:768px){
+nav{
+    padding:5px;
+    text-align:center;
+    margin:0 auto;
+    width:120%
+}
+    nav .active a{
+      color:#722872;
+      background:#bbb;
+      -webkit-box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+              box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+.nav>li{
+    height:100%;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:2px;
+    display:-webkit-inline-box;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+  }
+.nav>li a{
+      color:#ffffff;
+      padding:10px 20px;
+    }
+.nav>li a:hover{
+        color:#722872;
+        background:#bbb;
+        -webkit-box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+                box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+      }
+.navbar-toggle{
+    margin-right:0;
+  }
+#top{
+  height:80px;
+  width:auto;
+  display:block;
+}
+main >*:not(.scroll-top){
+    max-width:1024px;
+    margin:0 auto;
+    -webkit-box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+main header{
+    background:#aaa;
+    color:#fff;
+    text-align:right;
+    padding:70px 10% 50px;
+    -webkit-box-align:end;
+        -ms-flex-align:end;
+            align-items:flex-end;
+    -ms-flex-line-pack:distribute;
+        align-content:space-around;
+  }
+@media(min-width:1023px){
+main header{
+      padding:50px 30px
+  }
+    }
+main header img{
+      border-radius:50%;
+      margin:30px 0 10px;
+      max-width:80%;
+      height:auto;
+      width:250px;
+    }
+main header .intro-text{
+    max-width:675px;
+    text-align:center;
+    margin-bottom:30px;
+  }
+@media(min-width:1023px){
+main header .intro-text{
+      text-align:right;
+      width:610px
+  }
+    }
+main header .intro-text .skills{
+      font-size:1.15em;
+    }
+main section{
+    background:#eee;
+    padding:40px 0;
+  }
+main section#contact>div{
+      margin:0px auto;
+    }
+main section#contact>div>div{
+        width:80%;
+      }
+main section#contact>div>div p{margin:60px auto 0;
+        max-width:700px;}
+@media(min-width:1023px){
+main section#contact>div>div{
+          max-width:38%
+      }
+          main section#contact>div>div p{margin-top:35px;
+          }
+            main section#contact>div>div p:last-child{
+              margin-top:270px;
+            }
+        }
+#portfolio .grid{
+	padding:0;
+	max-width:90%;
+	list-style:none; 
+	margin-top:20px;
+}
+#portfolio .grid li{
+	margin:20px;
+  max-width:600px;
+  }
+@media(min-width:1023px){
+#portfolio .grid li{
+    max-width:420px
+  }
+    }
+#portfolio img{
+  
+	max-width:100%;
+	height:auto;
+	display:block;
+}
+form{
+  width:80%;
+}
+@media(min-width:1023px){
+form{
+    width:40%;
+    margin-left:20px
+}
+  }
+form .row:first-child .form-item{
+    border-top:1px solid #fff;
+    }
+.form-item{
+    position:relative;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom:1px solid #bbb;
+  }
+.form-item input, .form-item textarea{
+      z-index:1;
+      position:relative;
+      padding-right:0;
+      padding-left:0;
+      border:0;
+      border-radius:0;
+      font-size:1.5em;
+      background:0 0;
+      -webkit-box-shadow:none!important;
+              box-shadow:none!important;
+      resize:none;
+      width:100%;
+    }
+.form-item input:focus, .form-item textarea:focus{
+        outline:0
+      }
+.form-item label{
+      display:block;
+      z-index:0;
+      position:relative;
+      top:2em;
+      margin:0;
+      font-size:.85em;
+      line-height:1.764705882em;
+      vertical-align:middle;
+      vertical-align:baseline;
+      opacity:0;
+      -webkit-transition:top .3s ease,opacity .3s ease;
+      transition:top .3s ease,opacity .3s ease;
+    }
+.form-item-filled label{
+      top:0;
+      opacity:1;
+      color:#aaa;
+    }
+.form-item-focused label{
+      color:#722872;
+    }
+footer{
+  color:#fff;
+  background-color:#aaa;
+  text-align:center;
+  -webkit-box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+footer h3{
+    margin-bottom:30px;
+    color:#fff;
+  }
+#footer-above{
+    padding-top:50px;
+    width:80%;
+  }
+#footer-above div{
+      margin-bottom:50px;
+      width:250px;
+    }
+#footer-above ul{
+      padding:0;
+    }
+#footer-above li{
+      display:inline;
+    }
+#footer-below{
+    -webkit-box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow:0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+    padding:25px 0;
+    background-color:#722872;
+    text-align:center;
+  }
+.button{
+  color:#fff;
+  border:solid 2px #fff;
+  border-radius:50%;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  text-align:center;
+  font-size:20px;
+  line-height:48px;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+.button:hover{
+    border:solid 2px #fff;
+    color:#722872;
+    background:#fff;
+  }
+.scroll-top{
+  z-index:1049;
+  position:fixed; 
+  visibility:visible;
+  bottom:2%;right:2%;
+}
+.scroll-top a{
+    background:#722872;  
+  }
+.scroll-top a:hover, .scroll-top a:focus{
+      color:#722872;
+      background-color:#bbb;
+      border-color:#722872;
+    }
+@media(min-width:768px){
+.scroll-top a{
+      visibility:hidden  
+  }
+ 
+    }
+hr.star-bright, hr.star-dark{
+    margin:40px auto 30px;
+    padding:0;
+    max-width:512px;
+    border:0;
+    border-top:solid 5px;
+    text-align:center;
+  }
+@media(min-width:1023px){
+header hr.star-bright, header hr.star-dark{
+        margin-right:0;
+        text-align:right
+    }
+        header hr.star-bright:after, header hr.star-dark:after{
+          right:-10px;
+        }
+      }
+hr.star-bright:after, hr.star-dark:after{
+      content:'\f121';
+      font-family:FontAwesome;
+      display:inline-block;
+      position:relative;
+      top:-.8em;
+      padding:0 .25em;
+      font-size:2em;
+    }
+hr.star-bright{
+    border-color:#fff;
+  }
+hr.star-bright:after{
+      color:#fff;
+      background-color:#aaa;
+    }
+hr.star-dark{
+    border-color:#888;
+  }
+hr.star-dark:after{
+      color:#888;
+      background-color:#eee;
+    }
+
+#heading{
+font-family:serif;
+color:#557c3e;
+font-size:1.5em;
+text-transform:uppercase;
+font-weight:bold;
+text-shadow:1px 1px 1px #222;
+margin-top:0;
+margin-bottom:0;
+line-height:.75;
+}
+a{
+text-decoration:none;
+}
+#nitin{
+color:white;
+background-color:#4d0000;
+font-family: serif;
+padding-left:15px;
+}
+#nit{
+text-align:center;
+}
+#man{
+background-color:#666633;
+color:#660033;
+}
+@media (max-width:767px){
+#heading{
+  padding-top:30px;
+  padding-left:25px;
+  padding-right:20px;
+  }
+  .navbar{
+	  padding:30px;
+  }
+}
+.navbar{
+margin:0;
+
+}
+</style>
+
+</head>
+<body>
+<div class="container-fluid">
+<header class="navbar navbar-default navbar-fixed-top " id="banner">
+  <div class="container">
+  <a href="#"><h1 id="heading" class="text-center" >Himanshu</h1></a>
+    
+    <nav class="collapse navbar-collapse" id="navbar" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a class = "active" href = "#home">Home</a></li>
+        <li><a class="scrollable" href="#top">About</a></li>
+        <li><a class="scrollable" href="#portfolio">Portfolio</a></li>
+        <li><a class="scrollable" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- end header-->
+<a id="top" name="home"></a>
+<main>
+  <header>
+    <div class="intro-text">
+     <p>Hello my name is HIMANSHU, i'm 19 years old and i'm a web developer also web designer from India. I am fresher and dont have any experience in developing . I have developing website for small business, website for community, and even you can just talkabout your problem business, so i can give the advice for find the solution and also i am practised python and C programmer</p>
+      <hr class="star-bright"/><span class="skills">Web Developer - Programmer - Designer</span>
+    </div><img src="royal.jpg" alt="A picture of Himanshu looking at outside from his house" title="A picture of Himanshu looking outside from his house."/>
+  </header>
+  <!-- Gallery Grid Section-->
+  <section class="buttons">
+  <h3>Click below for my resume.</h3>
+ <div class="container-cv">
+ <a href="https://www.linkedin.com/in/himanshu-sharma-99b210145/" target="_blank" class="btn-cv tn-1">
+ <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg> <h2>Resume </h2></a>
+ </div>
+ </section>
+ <section id="nitin">
+  <div id="gtco-features-2">
+ <div class="gtco-container">
+ <div class="row">
+ <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+ <h2>Why Choose Me</h2>
+ <p>This is some reasons why should choose me, because i'm a hardworker learner and begginer so i will give my best to all my client so that i make a better portfolio.
+ </p>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-md-6">
+ <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+ <span class="icon">
+ <i class="icon-time-slot"></i>
+ </span>
+ <div class="feature-copy"><h3>Fast Response</h3><p>I'm ready 24 hours for any problem you have, and i'll help you. You can ask for my services, benfits and etc.</p>
+ </div>
+ </div>
+ <div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+ <span class="icon">
+ <i class="icon-check">
+ </i>
+ </span>
+ <div class="feature-copy"><h3>Fully Services</h3><p>My prices are included my services, so if you agreed with me, you'll got my services all time without more fee.</p>
+ </div>
+ </div>
+ <div class="feature-left animate-box" data-animate-effect="fadeInLeft"><span class="icon">
+ <i class="icon-paper"></i>
+ </span>
+ <div class="feature-copy"><h3>Good Quality</h3><p>I design and develop website with my best skills, so quality is number one for me and dont worried to get bad websites.</p></div>
+ </div>
+ </section>
+ <section id="nit" class=" skills skill-bg">
+ <div class="overlay-img">
+ <div class="container sections text-center">
+ <div class="skill-heading">
+ <h2 class="custom-font">MY SKILLS</h2>
+ </div>
+ <div class="row">
+ <div class="col-sm-3 text-center">
+ <div class="main-skill">
+ <div class="chart-round">
+ <div class="chart" data-percent="95"><span class="percent"></span>
+ </div>
+ </div>
+ <div class="skills-text">HTML5</div>
+ </div>
+ </div>
+ <div class="col-sm-3 text-center">
+ <div class="main-skill">
+ <div class="chart-round">
+ <div class="chart" data-percent="92">
+ <span class="percent"></span>
+ </div>
+ </div>
+ <div class="skills-text">CSS</div>
+ </div>
+ </div>
+ <div class="col-sm-3 text-center">
+ <div class="main-skill">
+ <div class="chart-round">
+ 
+ <div class="chart" data-percent="88">
+ <span class="percent"></span>
+ </div>
+ </div>
+ <div class="skills-text">Javascript</div>
+ </div>
+ </div>
+ <div class="col-sm-3 text-center">
+ <div class="main-skill">
+ <div class="chart-round">
+ <div class="chart" data-percent="84">
+ <span class="percent"></span>
+ </div>
+ </div>
+ <div class="skills-text">
+ Bootstrap</div>
+ </div>
+ </div>
+ <div class="col-sm-3 text-center">
+ <div class="main-skill">
+ <div class="chart-round">
+ <div class="chart" data-percent="80">
+ <span class="percent">
+ </span>
+ </div>
+ </div>
+ <div class="skills-text">Media query</div></div>
+ </div>
+ <div class="col-sm-3 text-center">
+ <div class="main-skill">
+ <div class="chart-round">
+ <div class="chart" data-percent="78">
+ <span class="percent"></span>
+ </div>
+ </div>
+ <div class="skills-text">C</div>
+ </div>
+ </div>
+ <div class="col-sm-3 text-center">
+ <div class="main-skill"><div class="chart-round">
+ <div class="chart" data-percent="72">
+ <span class="percent"></span>
+ </div>
+ </div>
+ <div class="skills-text">Python</div>
+ </div>
+ <div class="col-sm-3 text-center">
+ <div class="main-skill"><div class="chart-round">
+ <div class="chart" data-percent="72">
+ <span class="percent"></span>
+ </div>
+ </div>
+ <div class="skills-text">Jquery</div>
+ </div>
+ </div>
+ <div class="col-sm-3 text-center">
+ <div class="main-skill">
+ <div class="chart-round">
+ <div class="chart" data-percent="68">
+ <span class="percent"></span>
+ </div>
+ </div>
+
+ </div>
+ </div>
+ </div>
+ </section> 
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <hr class="star-dark"/>
+    <ul class="grid">
+	<h1>GETFOOD-Food ordering site</h1> 
+ <small>It's actually not hosted, because this site i made it for my education and my exercises.</small>
+      <li><img src="getfood.png" alt=""/></li>
+     <div>
+	 
+ <h1>BLANK</h1> 
+ <small>Make this field a lot of project that i have, please help me to fill this blank. And lets make something awesome with me.</small>
+      <li><img src="blank.png" alt=""/></li>
+    </ul>
+    
+  </section>
+  <!-- Contact Section-->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <hr class="star-dark"/>
+    <div>
+      <form id="contactForm" novalidate>
+        <div class="form-item">
+          <label for="“name”">Name</label>
+          <input id="name" type="text" placeholder="Name" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“email”">Email Address</label>
+          <input id="email" type="email" placeholder="Email Address" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“phone”">Phone Number</label>
+          <input id="phone" type="tel" placeholder="Phone Number" required=""/>
+        </div>
+        <div class="form-item">
+          <label for="“message”">Message</label>
+          <textarea id="message" rows="5" placeholder="Message" required></textarea>
+        </div><br/>
+        <button type="submit">Send</button>
+      </form>
+      <div>
+        <p>Want to get in touch with me? Ask for my experience and your related query.Feel free to drop message and ask help for your question.</p>
+        <p>I promise to reply you as quickly i can.</p>
+        <p>Note: Please gali mat bakna .</p>
+      </div>
+    </div>
+  </section>
+  <!-- Scroll to Top Button (Only supposed to be visible on small and small screen sizes)-->
+  <div class="scroll-top"><a class="button scrollable" href="#top"><i class="fa fa-chevron-up"></i></a></div>
+</main>
+<!-- Footer-->
+<footer>
+  <div id="footer-above">
+    <div>
+      <h3>About this page</h3>
+      <p>Made with love and support <br/>by <a href="#">Himanshu sharma</a>.</p>
+    </div>
+    <div>
+      <h3>Around the Web</h3>
+      <ul>
+        <li><a class="button social" href="https://www.linkedin.com/in/himanshu-sharma-99b210145/  target=_blank "><i class="fa fa-fw fa-linkedin"></i></a></li>
+        
+        <li><a class="button social" href="https://facebook.com/nitinsharma971"><i class="fa fa-fw fa-facebook" target="_blank"></i></a></li>
+        
+      </ul>
+    </div>
+  </div>
+  <div id="footer-below">Himanshu © 
+    <script>document.write(new Date().getFullYear())</script>. All Rights Reversed
+  </div>
+</footer>
+<footer>
+<section id="man">
+ <div class="col-md-5 col-sm-8 ">
+ <div class="wow fadeInUp contact-info" data-wow-delay="0.4s">
+ <p>
+ <i class="fa fa-map-marker"></i> salempur -kayasth sikandrabad India</p>
+ <p>
+ <i class="fa fa-comment"></i>himanshush214@gmail.com</p>
+ <p><i class="fa fa-phone"></i> +91-9084340354 </p>
+ </div>
+ </div>
+ <div class="row copyright">
+ <div class="col-md-12">
+ <p class="pull-left">
+ <small class="block">&copy; 2018 Personal Website of Himanshu.</small>
+ <small class="block">Made in <strong>India</strong> and Designed with <i class="fa fa-heart" id="heart"></i> by <a href="http://himanshu-sharma-99b210145.com/" rel="canonical" target="_blank">Himanshu</a>
+ </small>
+ </p>
+ <p class="pull-right">
+ <ul class="gtco-social-icons pull-right">
+ <li>
+ <a href="#"><i class="icon-facebook">
+ </i>
+ </a>
+ </li>
+ <li>
+ <a href="#"><i class="icon-instagram"></i></a>
+ </li>
+ <li>
+ <a href="mailto:himanshush214@gmail.com">
+ <i class="icon-mail">
+ </i>
+ </a>
+ </li>
+ </ul>
+ </p>
+ </div>
+ </div>
+ 
+ </section>
+ 
+ <div class="gototop js-top">
+ <a href="javascript:void(0)" id="rocketmeluncur" class="showrocket">
+ <i></i></a>
+ </div>
+ 
+ <script async src="ga-local.js"></script>
+ <script src="js/modernizr-2.6.2.min.js"></script>
+ <script async src="js/jquery.min.js"></script>
+ <script async src="js/jquery.easing.1.3.js"></script>
+ <script async src="js/bootstrap.min.js"></script>
+ </footer>
+ </div>
+</body>
+
+</html>
